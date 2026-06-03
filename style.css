@@ -57,7 +57,7 @@ body {
     color: #4da6ff;
 }
 
-/* ===== SEÇÃO HERO ===== */
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -199,7 +199,7 @@ footer {
     width: 100%;
 }
 
-/* ===== MENU HAMBURGER ===== */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -227,13 +227,13 @@ footer {
     transform: rotate(-45deg) translate(8px, -8px);
 }
 
-/* ===== ESTILO DA NAVBAR AO SCROLL ===== */
+
 .navbar.scrollado {
     background: rgba(44, 62, 80, 1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== FORMULÁRIO DE CONTATO ===== */
+
 .form-container {
     max-width: 600px;
     margin: 40px auto;
@@ -351,7 +351,7 @@ footer {
     animation: fadeIn 0.6s ease-out;
 }
 
-/* ===== RESPONSIVIDADE PARA TABLETS ===== */
+
 @media (max-width: 1024px) {
     .navbar .nav-links li {
         margin-left: 20px;
@@ -370,7 +370,7 @@ footer {
     }
 }
 
-/* ===== RESPONSIVIDADE PARA MOBILE ===== */
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -443,7 +443,7 @@ footer {
     }
 }
 
-/* ===== RESPONSIVIDADE PARA SMARTPHONES PEQUENOS ===== */
+
 @media (max-width: 480px) {
     .navbar {
         padding: 12px 3%;
