@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navegação-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="77f6976e-929d-4132-ae7e-f8356e9375c3.png" alt="Logo Sigma">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#publico-alvo">Público Alvo</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#dia-a-dia">Dia a Dia</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+   <section class="hero">
+    <div class="hero-text">
+        <h1>SIGMA</h1>
+        <p>Monitoramento inteligente de enchentes e terremotos através de satélites e inteligência artificial.</p>
+        
+        <a href="#problema">Saiba Mais</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="hero GS.webp" alt="Imagem Hero">
+    </div>
+</section>
+
+<!--1. Problema-->
+<section id="problema" class="section">
+    <div class="container">
+        <h2>Problema</h2>
+        <p>Desastres naturais como enchentes e terremotos causam milhares de mortes, prejuízos econômicos e danos ambientais todos os anos. Muitas regiões não possuem sistemas eficientes de monitoramento e alerta precoce, dificultando a evacuação e prevenção de riscos.</p>
+    </div>
+</section>
+
+<!--2.Tecnologia-->
+<section id="tecnologia" class="section alt-bg">
+    <div class="container">
+        <h2>Tecnologia</h2>
+        <p><ul>
+            <li>Sátelites de observação da Terra.</li>
+            <li>Sensoriamento remoto.</li>
+            <li>Inteligência Artificial (IA) para análise de dados.</li>
+            <li>Big Data para rprocessamento de grandes volumes de informações.</li>
+            <li>Sistemas de alerta em tempo real.</li>
+            <li>Geolocalização e mapeamento digital.</li>
+        </ul></p>
+    </div>
+</section>
+
+<!--3. Objetivos-->
+<section id="objetivos" class="section">
+    <div class="container">
+        <h2>Objetivos</h2>
+        <p>
+            <ul>
+                <li>Dectectar riscos de enchentes antes que ocorram.</li>
+                <li>Identificar atividades sísmicas que possam indicar terremotos.</li>
+                <li>Emitir alertas rápidos para autoridades e população.</li>
+                <li>Reduzir perdas humanas e materiais.</li>
+                <li>Auxiliar governos na tomada de decisões em situações de emergência.</li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+<!--4. Público Alvo-->
+<section id="publico-alvo" class="section alt-bg">
+    <div class="container">
+        <h2>Público-Alvo</h2>
+        <p>
+            <ul>
+                <li>Governos Municipais, estaduais e federais.</li>
+                <li>Defesa Civil.</li>
+                <li>Organizações humanitárias.</li>
+                <li>Empresas de infraestrutura.</li>
+                <li>Comunidades em áreas de risco</li>
+                <li>Instituições de pesquisa e monitoramento ambiental.</li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+<!--5. Beneficios-->
+<section id="beneficios" class="section">
+    <div class="container">
+        <h2>Benefícios</h2>
+        <p>
+            <ul>
+                <li>Alertas antecipados para evacuação.</li>
+                <li>Redução de vítimas e prejuízos.</li>
+                <li>Monitoramento contínuo em escala global.</li>
+                <li>Maior precisão na identificação de áreas de risco.</li>
+                <li>Apoio ao planejamento urbano e ambiental.</li>
+                <li>Resposta mais rápida a emergências.</li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+<!--6. Dia a Dia-->
+
+<section id="dia-a-dia" class="section">
+    <div class="container">
+        <h2>Dia a Dia</h2>
+          <ul>
+                <li> Os satélites coletam imagens e dados atmosféricos, geológicos e hidrológicos 24 horas por dia.</li>
+                <li> A inteligência artificial analisa os dados em tempo real.</li>
+                <li> O sistema identifica padrões que indicam possíveis enchentes ou terremotos.</li>
+                <li> Caso seja detectado um risco, alertas automáticos são enviados para órgão responsãveis.</li>
+                <li> As autoridades recebem mapas e relatórios detalhados da área afetada.</li>
+                <li> A população é notificada por aplicativos, SMS ou sistemas de emergência.</li>
+                <li> O monitoramento continua durante e após o evento para auxiliar o gerenciamento da crise.</li>
+
+                </ul>
+            </div>
+</section>
+
+<!--7. Formulário de Contato-->
+<section id="contato" class="section">
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <div class="form-container">
+            <form class="form-contato" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto *</label>
+                    <input type="text" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p> Arthur Nepomuceno: Rm572626
+        Raphael Mascarenhas: Rm572313
+        Felipe Motta: Rm570550
+        Yan: Rm572373
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
