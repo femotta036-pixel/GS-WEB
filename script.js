@@ -1,4 +1,4 @@
-// ===== INICIALIZAÇÃO =====
+
 document.addEventListener('DOMContentLoaded', function() {
     criarHamburger();
     setupFormulario();
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupLinks();
 });
 
-// ===== MENU RESPONSIVO (HAMBURGER MENU) =====
+
 function criarHamburger() {
     const navbar = document.querySelector('.navbar');
     const hamburger = document.createElement('div');
@@ -33,7 +33,7 @@ function criarHamburger() {
     });
 }
 
-// ===== VALIDAÇÃO DE FORMULÁRIO =====
+
 function setupFormulario() {
     const form = document.querySelector('.form-contato');
     if (form) {
@@ -100,7 +100,7 @@ function mostrarSucesso(form) {
     }, 5000);
 }
 
-// ===== EFEITO NA NAVBAR AO SCROLL =====
+
 function setupNavbar() {
     const navbar = document.querySelector('.navbar');
 
@@ -115,7 +115,7 @@ function setupNavbar() {
     });
 }
 
-// ===== NAVEGAÇÃO SUAVIZADA =====
+
 function setupLinks() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
