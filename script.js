@@ -4,8 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setupFormulario();
     setupNavbar();
     setupLinks();
+
+    iniciarQuiz();
+    iniciarSlideshow();
 });
 
+function trocarTema(tema) {
+    document.body.className = tema;
+}
 
 function criarHamburger() {
     const navbar = document.querySelector('.navbar');
@@ -125,4 +131,135 @@ function setupLinks() {
             }
         });
     });
+}
+
+const imagens = [
+    "heroGS.webp",
+    "imagem2.jpg",
+    "imagem3.jpeg",
+    "imagem4.jpg"
+];
+
+let slideAtual = 0;
+
+function iniciarSlideshow() {
+
+    const slide = document.getElementById("slide");
+
+    if (!slide) return;
+
+    setInterval(() => {
+
+        slideAtual++;
+
+        if (slideAtual >= imagens.length) {
+            slideAtual = 0;
+        }
+
+        slide.src = imagens[slideAtual];
+
+    }, 3000);
+}
+
+
+const perguntas = [
+{
+    pergunta: "Qual desastre é causado pelo excesso de água?",
+    opcoes: ["Enchente", "Terremoto", "Seca"],
+    correta: 0
+},
+{
+    pergunta: "Qual instrumento detecta terremotos?",
+    opcoes: ["Sismógrafo", "Termômetro", "Barômetro"],
+    correta: 0
+},
+{
+    pergunta: "O lixo pode agravar enchentes?",
+    opcoes: ["Sim", "Não", "Nunca"],
+    correta: 0
+},
+{
+    pergunta: "Qual estado sofreu grandes enchentes em 2024?",
+    opcoes: ["Rio Grande do Sul", "Amazonas", "Acre"],
+    correta: 0
+},
+{
+    pergunta: "Satélites ajudam no monitoramento?",
+    opcoes: ["Sim", "Não", "Nunca"],
+    correta: 0
+},
+{
+    pergunta: "A IA pode analisar riscos?",
+    opcoes: ["Sim", "Não", "Nunca"],
+    correta: 0
+},
+{
+    pergunta: "Bueiros entupidos favorecem enchentes?",
+    opcoes: ["Sim", "Não", "Nunca"],
+    correta: 0
+},
+{
+    pergunta: "Terremotos acontecem pela movimentação das placas tectônicas?",
+    opcoes: ["Sim", "Não", "Nunca"],
+    correta: 0
+},
+{
+    pergunta: "Alertas antecipados salvam vidas?",
+    opcoes: ["Sim", "Não", "Nunca"],
+    correta: 0
+},
+{
+    pergunta: "O SIGMA monitora enchentes e terremotos?",
+    opcoes: ["Sim", "Não", "Nunca"],
+    correta: 0
+}
+];
+
+let perguntaAtual = 0;
+let pontuacao = 0;
+
+function iniciarQuiz() {
+    carregarPergunta();
+
+    document.getElementById("a").onclick = () => responder(0);
+    document.getElementById("b").onclick = () => responder(1);
+    document.getElementById("c").onclick = () => responder(2);
+}
+
+function carregarPergunta() {
+
+    if (perguntaAtual >= perguntas.length) {
+
+        document.querySelector(".quiz-opcoes").innerHTML = "";
+
+        document.getElementById("resultado").innerHTML =
+            `<h3>Você acertou ${pontuacao} de ${perguntas.length} perguntas!</h3>`;
+
+        return;
+    }
+
+    const pergunta = perguntas[perguntaAtual];
+
+    document.getElementById("pergunta").textContent =
+        pergunta.pergunta;
+
+    document.getElementById("a").textContent =
+        pergunta.opcoes[0];
+
+    document.getElementById("b").textContent =
+        pergunta.opcoes[1];
+
+    document.getElementById("c").textContent =
+        pergunta.opcoes[2];
+}
+
+function responder(opcao) {
+
+    if (opcao === perguntas[perguntaAtual].correta) {
+        pontuacao++;
+    }
+
+    perguntaAtual++;
+
+    carregarPergunta();
 }
