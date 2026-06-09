@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-    background: rgba(44, 62, 80, 0.95);
+    background: rgba(44, 62, 80, 0.95); 
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -29,6 +29,18 @@ body {
     box-shadow: 0 2px 15px rgba(0,0,0,0.15);
 }
 
+.azul {
+    background-color: #81b8ff;
+}
+
+.verde {
+    background-color: #dcfce7;
+}
+
+.escuro {
+    background-color: #061b38;
+    color: white;
+}
 .logo img {
     height: 60px;
 }
@@ -490,4 +502,90 @@ footer {
         padding: 15px;
         margin: 15px 0;
     }
+}
+
+/* =====================
+   TROCA DE TEMAS
+===================== */
+
+.temas{
+    text-align:center;
+    padding:20px;
+    background:#f5f5f5;
+}
+
+.temas button{
+    padding:12px 25px;
+    margin:5px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.temas button:hover{
+    transform:translateY(-3px);
+}
+
+/* =====================
+   SLIDESHOW
+===================== */
+
+#slideshow{
+    width:100%;
+    height:500px;
+    overflow:hidden;
+}
+
+#slide{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* =====================
+   QUIZ
+===================== */
+
+#quiz{
+    text-align:center;
+}
+
+#pergunta{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:30px;
+    color:#2c3e50;
+}
+
+.quiz-opcoes{
+    max-width:600px;
+    margin:0 auto;
+}
+
+.quiz-opcoes button{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    background:#4da6ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.quiz-opcoes button:hover{
+    background:#2c7fd9;
+    transform:translateY(-2px);
+}
+
+#resultado{
+    margin-top:30px;
+    font-size:28px;
+    font-weight:bold;
+    color:#28a745;
 }
