@@ -8,10 +8,13 @@
 </head>
 <body>
 
+<section id="slideshow">
+    <img id="slide" src="slide1.jpg" alt="Slideshow SIGMA">
+</section>
    
     <nav class="navbar">
         <div class="logo">
-            <img src="77f6976e-929d-4132-ae7e-f8356e9375c3.png" alt="Logo Sigma">
+            <img src="image.png" alt="Logo Sigma">
         </div>
         <ul class="nav-links">
             <li><a href="#problema">Problema</a></li>
@@ -23,7 +26,11 @@
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-
+    <div class="temas">
+    <button onclick="trocarTema('azul')">Azul</button>
+    <button onclick="trocarTema('verde')">Verde</button>
+    <button onclick="trocarTema('escuro')">Escuro</button>
+</div>
    <section class="hero">
     <div class="hero-text">
         <h1>SIGMA</h1>
@@ -36,7 +43,6 @@
         <img src="hero GS.webp" alt="Imagem Hero">
     </div>
 </section>
-
 
 <section id="problema" class="section">
     <div class="container">
@@ -126,6 +132,21 @@
 
                 </ul>
             </div>
+</section>
+<section id="quiz" class="section">
+    <div class="container">
+        <h2>Quiz sobre Enchentes e Terremotos</h2>
+
+        <div id="pergunta"></div>
+
+        <div class="quiz-opcoes">
+            <button id="a"></button>
+            <button id="b"></button>
+            <button id="c"></button>
+        </div>
+
+        <p id="resultado"></p>
+    </div>
 </section>
 
 
